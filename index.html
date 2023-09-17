@@ -16,6 +16,65 @@
         <i class="bx bx-menu menu-icon"></i>
         <span class="logo-name">Hunter Lincoln</span>
       </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Hunter Lincoln</span>
+        </div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-home icon"></i>
+                <span class="link">Dashboard</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-user icon"></i>
+                <span class="link">About</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-code-block icon"></i>
+                <span class="link">Projects</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-paperclip icon"></i>
+                <span class="link">Experience</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bxs-contact icon"></i>
+                <span class="link">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
+    <section class="overlay"></section>
+
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icons"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtns) => {
+        menuBtns.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>
   </body>
 </html>
