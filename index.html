@@ -11,6 +11,49 @@
     />
   </head>
   <body>
+    <!-- Welcome Message -->
+
+    <div id="home" class="welcome">
+      <img
+        src="/images/blurred_purple_background.jpeg"
+        alt=""
+        class="background"
+      />
+      <h1 class="welcome-msg">Hello, welcome to my website!</h1>
+    </div>
+
+    <!-- Potfolio Section -->
+
+    <div>
+      <h2 id="portfolio" class="title">Portfolio</h2>
+      <div class="port-container">
+        <h3 class="port-title">Card Game</h3>
+        <h3 class="port-title">Safe Flying Conditions</h3>
+        <h3 class="port-title">School Links</h3>
+      </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="about">
+      <h2 id="about" class="title">About</h2>
+      <img src="/images/IMG_2138.jpeg" alt="" class="about-img" />
+    </div>
+
+    <!-- Resume Section -->
+
+    <div>
+      <h2 id="resume" class="title">Resume</h2>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div>
+      <h2 id="contact" class="title">Contact</h2>
+    </div>
+
+    <!-- Navigation and Sidebar -->
+
     <nav>
       <div class="logo">
         <i class="bx bx-menu menu-icon"></i>
@@ -31,25 +74,25 @@
               </a>
             </li>
             <li class="list">
-              <a href="#" class="nav-link">
-                <i class="bx bx-user icon"></i>
-                <span class="link">About</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="#" class="nav-link">
+              <a href="#portfolio" class="nav-link">
                 <i class="bx bx-code-block icon"></i>
                 <span class="link">Projects</span>
               </a>
             </li>
             <li class="list">
-              <a href="#" class="nav-link">
+              <a href="#about" class="nav-link">
+                <i class="bx bx-user icon"></i>
+                <span class="link">About</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#resume" class="nav-link">
                 <i class="bx bx-paperclip icon"></i>
                 <span class="link">Experience</span>
               </a>
             </li>
             <li class="list">
-              <a href="#" class="nav-link">
+              <a href="#contact" class="nav-link">
                 <i class="bx bxs-contact icon"></i>
                 <span class="link">Contact</span>
               </a>
@@ -61,6 +104,29 @@
 
     <section class="overlay"></section>
 
+    <!-- Footer -->
+    <div class="footer">
+      <ul class="contributes">
+        Color Design:
+        <li class="cont-name">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/hayley-vedders-497403264/"
+            >Hayley Vedders</a
+          >
+        </li>
+        <li class="cont-name">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/olivia-austin-796331205/"
+            >Olivia Austin</a
+          >
+        </li>
+        <li class="cont-name">Katelyn McCorry</li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
     <script>
       const navBar = document.querySelector("nav"),
         menuBtns = document.querySelectorAll(".menu-icon"),
