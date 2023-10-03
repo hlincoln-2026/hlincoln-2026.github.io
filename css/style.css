@@ -184,11 +184,22 @@ nav.open ~ .overlay{
 
 .port-container{
     text-align: center;
+    display: flex;
+    margin-left: 370px;
 }
 
-.port-container .port-title{
-    display: inline;
-    padding: 30px;
+
+
+
+.port-container .cards{
+    display: block;
+    
+}
+
+.port-img{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 200px;
 }
 
 
